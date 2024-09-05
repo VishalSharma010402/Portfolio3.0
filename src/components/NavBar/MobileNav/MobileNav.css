@@ -1,0 +1,71 @@
+.mobile-menu{
+
+    width: 100vh;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0,0,0,0.3) ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999 !important;
+    opacity: 0;
+    box-shadow: 0px 29px 80px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    transform: translateX(-100vw);
+}
+
+.mobile-menu-container{
+    width: 60vw;
+    height: 100vh;
+    background-color: #342864;
+    padding: 2rem ;
+}
+
+.mobile-menu:active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    margin-left:  2rem;
+}
+.mobile-menu-container > h2 {
+    width: 15%;
+    font-family: "Protest Guerrilla", cursive;
+    font-size: 2rem;
+    border: 2px solid rgb(5, 22, 95);
+    padding: 0px 9px 0px 9px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 20px;
+}
+.tabs{
+    font-size: 25px;
+}
+.contact-button{
+    margin-top: 10px;
+    font-size: 25px;
+    height: 8vh;
+    border: 1px solid #7e61e7;
+    border-radius: 0.4rem;
+    background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+}
+.contact-button:hover {
+    border: 1px solid #7e61e7 ;
+    background:#342864;
+    font-weight: 300;
+    color: #7e61e7;}
+.contact-button:active{
+    transform: translateY(2.9px);
+}
+
+@media(max-width:769){
+    .mobile-menu{
+        display: block;
+    }
+}

@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
+
+.main-nav {
+  display: flex;
+  top: 0;
+  position: sticky;
+  backdrop-filter: blur(50px);
+  /* background-color: #f0f0f0; */
+  height: 10vh;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.items {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.nav-content > h2 {
+  font-family: "Protest Guerrilla", cursive;
+  font-size: 2rem;
+  border: 2px solid rgb(5, 22, 95);
+  padding: 0px 9px 0px 9px;
+  border-radius: 50%;
+}
+.tabs {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  list-style: none;
+}
+
+
+
+.btn {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+  width: 120px;
+  height: 6vh;
+  border: 1px solid #7e61e7 ;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  transform: translateY(0px);
+}
+.btn:hover {
+  border: 1px solid #7e61e7 ;
+  background:transparent;
+  font-weight: 300;
+  color: #7e61e7;
+  width: 120px;
+  height: 6vh;
+  border-radius: 10px;
+}
+.btn:active {
+  transform: translateY(2.9px);
+}
+.menu-btn2>span>ion-icon{
+  width: 60px;
+  height: 8vh;
+  border: 1px solid #a993fe;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  border-radius: 0.4rem;
+  background: linear-gradient(90deg,#a993fe 0%,#7e61e7 100%);
+
+}
+.menu-btn2{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+  color: white;
+  line-height:0 ;
+  cursor: pointer;
+  display: none;
+}
+.menu-btn2>span>ion-icon:hover{
+  color: white;
+  background:#000;
+}
+
+@media (max-width:768px){
+  .nav-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5px;
+  }
+  .items,.btn{
+    display: none;
+  }
+  .menu-btn2{
+    display: contents;
+  }
+}
+@media (max-width: 1024px) {
+  .tabs{
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .btn{
+    font-size: 18px;
+    font-weight: 300;
+    width: 100px;
+    height: 6vh;
+  }
+  
+}
