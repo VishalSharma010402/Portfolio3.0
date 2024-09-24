@@ -1,0 +1,99 @@
+.main-container{
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    margin: 0px 10px;
+    position: relative;
+    z-index: 1;
+}
+.main-container::after,.main-container::before
+{
+    content: "";
+    width: 28.125rem;
+    height: 28.125rem;
+    background: #7e61e7;
+    position: absolute;
+    border-radius: 28.125rem;
+    z-index: -5;
+    filter: blur(225px);
+    transition: all 5s ease-in-out;
+    
+}
+.main-container::after{
+    animation: animate 15s infinite;
+    top: -2.9rem;
+    left: -2rem;
+}
+.main-container::before{
+    animation: animates 15s infinite;
+    bottom: 2rem;
+    right: 0rem;
+}
+@keyframes animate{
+    0%{
+        top: -2.9rem;
+        left: -2rem;
+        
+    }
+    50%{
+        top: 9rem;
+        left: 4rem;
+        
+    }
+    100%{
+        
+        top: -2.9rem;
+        left: -2rem;
+    }
+    
+}
+@keyframes animates{
+    0%{
+        bottom: 2rem;
+        right: 0rem;
+    }
+    50%{
+        bottom: 16rem;
+        right: 5rem;
+        filter: blur(200px);
+    }
+    100%{
+        
+        bottom: 2rem;
+        right: 0rem;
+    }
+    
+}
+
+.text-content{
+    margin-left: 81px;
+    height: 43vh;
+    width: 55%;
+    padding-left: 26px;
+}
+.text-content>h1{
+    font-size: 6.2rem;
+    margin: 0px 0px 0px 15px;
+    line-height: 6rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.text-content>span{
+    margin: 0px 0px 0px 15px;
+    color: #7e61e7;
+    font-size: 2rem;
+}
+.text-content>h1>span{
+    color: #7e61e7;
+}
+.text-content>h3{
+    letter-spacing: 1px;
+    margin: 21px 0px 0px 20px;
+    font-size: 1.6rem;
+    width: 97%;
+    
+}
+.img-content{
+    width: 56%;
+    height: 60vh;
+}

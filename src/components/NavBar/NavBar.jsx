@@ -16,35 +16,36 @@ const NavBar = () => {
           <h2>VS</h2>
           <ul className="items">
             <li>
-              <a href="#" className="tabs">
+              <a href="#" className="tabs1">
                 HOME
               </a>
             </li>
             <li>
-              <a href="#" className="tabs">
+              <a href="#" className="tabs1">
                 SKILLS
               </a>
             </li>
             <li>
-              <a href="#" className="tabs">
+              <a href="#" className="tabs1">
                 ABOUT
               </a>
             </li>
             <li>
-              <a href="#" className="tabs">
+              <a href="#" className="tabs1">
                 PROJECT
               </a>
             </li>
             <li>
-              <a href="#" className="tabs">
+              <a href="#" className="tabs1">
                 CONTACT
               </a>
             </li>
           </ul>
           <button className="btn"> Heir Me</button>
-          <button className="menu-btn2" onClick={toggleMenu}>
-            <span>
-             {openMenu ? <ion-icon name="close-outline"></ion-icon> : <ion-icon name="menu-outline"></ion-icon>}
+          <button className="menu-btn2" onClick={toggleMenu} >
+            <span className={"material-symbol-outline"}
+            style={{fontSize: "1.8rem"}}>{openMenu? "close":"menu"}
+             {/* <ion-icon name={openMenu ? "menu-outline" : "close-outline"} ></ion-icon> */}
             </span>
           </button>
         </div>
