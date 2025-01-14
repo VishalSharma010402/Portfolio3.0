@@ -23,11 +23,11 @@
 }
 .skills-img{
     width: 4rem;
-    background: rgba(22, 17, 47, 0.821);
+    background: rgba(31, 24, 62, 0.821);
     position: absolute;
     top: -1rem;
     left: -1rem;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(22px);
     border: 1.5px solid #6751b9;
     height: 4rem;
     display: flex;

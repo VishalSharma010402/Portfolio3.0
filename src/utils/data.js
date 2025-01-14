@@ -38,3 +38,33 @@ export const SKILLS = [
     ],
   },
 ];
+
+export const WORK_EXPERIENCE =[
+  {
+    title:"Frontend Intern in SEMS Foundation",
+    date:"May 2024 - September 2024",
+    responsibilities: [
+      "Developed and maintained WordPress websites, improving user experience and website performance.",
+      "Implemented custom themes, plugins, and integrations for enhanced website functionality.",
+      "Gained hands-on experience in front-end technologies (HTML, CSS, JavaScript) and basic back-end functionality.",
+    ],
+  },
+  {
+    title:"Customer Executive in Tata Play",
+    date:"August 2023 - December 2023",
+    responsibilities: [
+      "Developed and maintained WordPress websites, improving user experience and website performance.",
+      "Implemented custom themes, plugins, and integrations for enhanced website functionality.",
+      "Gained hands-on experience in front-end technologies (HTML, CSS, JavaScript) and basic back-end functionality.",
+    ],
+  },
+  {
+    title:"Customer Executive in Tata Play",
+    date:"August 2023 - December 2023",
+    responsibilities: [
+      "Developed and maintained WordPress websites, improving user experience and website performance.",
+      "Implemented custom themes, plugins, and integrations for enhanced website functionality.",
+      "Gained hands-on experience in front-end technologies (HTML, CSS, JavaScript) and basic back-end functionality.",
+    ],
+  }
+];

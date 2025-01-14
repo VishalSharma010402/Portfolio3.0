@@ -97,3 +97,26 @@
     width: 56%;
     height: 60vh;
 }
+
+@media (max-width: 1024px){
+    .text-content{
+        margin-left: 40px;
+    }
+    .text-content>span{
+        margin: 0px 0px 0px 15px;
+        color: #7e61e7;
+        font-size: 1.2rem;
+    }
+    .text-content>h1{
+        font-size: 4.9rem ;
+    }
+    .text-content>h3{
+        margin: 0px 0px 0px 22px;
+        font-size: 1.29rem;
+        width: 88%;
+    }
+    .img-content{
+        width: 46%;
+        height: 50vh;
+    }
+}
